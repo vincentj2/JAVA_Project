@@ -3,7 +3,7 @@ public class EquilateralTriangle implements Shapes{
 	 private double x1, y1, x2, y2, x3, y3;
      private double a, b, c,p;
 
-     public void setEquilateralTriangle(double x1, double y1, double x2,double y2, double x3, double y3){
+     EquilateralTriangle(double x1, double y1, double x2,double y2, double x3, double y3){
          this.x1 = x1;
          this.y1 = y1;
          this.x2 = x2;
@@ -27,7 +27,7 @@ public class EquilateralTriangle implements Shapes{
      @Override
      public String toString(){
     	 return "Type of shape: Equilateral Triangle\n"+"\tCoordiantes of Vertex 1 point: "+x1+","+y1+"\n\tCoordiantes of Vertex 2 point: "+x2+","+y2+
-    			 "/n/tCoordiantes of Vertex 3 point: "+x3+","+y3+"\n\tLength of side 1: "+getDistance(x1,y1,x2,y2)+"\n\tLength of side 2: "+getDistance(x1,y1,x3,y3)
+    			 "\n\tCoordiantes of Vertex 3 point: "+x3+","+y3+"\n\tLength of side 1: "+getDistance(x1,y1,x2,y2)+"\n\tLength of side 2: "+getDistance(x1,y1,x3,y3)
     			 +"\n\tLength of side 3: "+getDistance(x2,y2,x3,y3)+"\n\tSurface Area: "+getArea()+"\n";
      }
 }

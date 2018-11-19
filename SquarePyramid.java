@@ -5,7 +5,8 @@ public class SquarePyramid extends SquarePrism{
 	private double slantHeight;
 	
 	
-	public void setSquarePyramid(double x1,double x2,double y1,double y2,double normalHeight,double slantHeight) {
+	SquarePyramid(double x1,double x2,double y1,double y2,double normalHeight,double slantHeight) {
+		super(x1,y1,x2,y2, slantHeight);
 		this.x1=x1;this.x2=x2;this.y1=y1;this.y2=y2;
 		this.normalHeight=normalHeight;this.slantHeight=slantHeight;
 		

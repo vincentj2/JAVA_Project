@@ -3,7 +3,7 @@ public class Square implements Shapes{
 	 private double x1, y1, x2, y2;
      private double s;
 
-     public void setSquare(double x1, double y1, double x2, double y2){
+     Square(double x1, double y1, double x2, double y2){
          this.x1 = x1;
          this.y1 = y1;
          this.x2 = x2;
