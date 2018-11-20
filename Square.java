@@ -21,9 +21,8 @@ public class Square implements Shapes{
 
      @Override
      public String toString(){
-         return "Type of shape: Square\n"+"\tcoordinates of upper left Vertex 1: "+x1+","+y1
+         return "Type of shape: Square\n"+"\tcoordinates of upper left Vertex: "+x1+","+y1
         		 +"\n\tcoordinates of lower right vertex: "+x2+","+y2+"\n\tSide of a square: "+getDistance(x1,y1,x1,y2)+
         		 "\n\tSurface Area: "+getArea()+"\n";
      }
 }
-

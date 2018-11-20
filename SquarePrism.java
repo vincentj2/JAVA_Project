@@ -22,7 +22,7 @@ public class SquarePrism extends Square {
 	
 	@Override
 	public double getArea() {
-		return Math.round(getlateralSurface()+2.0*super.getArea()*1000.0)/1000.0;
+		return Math.round((getlateralSurface()+2.0*super.getArea())*1000.0)/1000.0;
 	}
 	public double getVolume() {
 		return Math.round(super.getArea()*normalHeight*1000.0)/1000.0;
@@ -33,6 +33,5 @@ public class SquarePrism extends Square {
 				"\n\tcoordinates of lower right vertex: "+x2+","+y2+"\n\tSide of a square: "+getDistance(x1, y1, x1, y2)+
 				"\n\tNormal Height: "+getNormalHeight()+"\n\tLateral Surface Area: "+getlateralSurface()+"\n\tSurface Area: "+getArea()+
 				"\n\tVolume: "+getVolume()+"\n";
-		
 	}	
 }

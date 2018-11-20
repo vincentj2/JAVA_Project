@@ -31,4 +31,3 @@ public class EquilateralTriangle implements Shapes{
     			 +"\n\tLength of side 3: "+getDistance(x2,y2,x3,y3)+"\n\tSurface Area: "+getArea()+"\n";
      }
 }
-

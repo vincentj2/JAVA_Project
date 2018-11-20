@@ -12,17 +12,20 @@ public class SquarePyramid extends SquarePrism{
 		
 		
 	}
+	public double getNormalHeight() {
+		return normalHeight;
+	}	
 	public double getSlantHeight() {
 		return slantHeight;
 	}
 	@Override
 	public double getArea() {
-		return Math.round(super.getBaseArea()+slantHeight*((getDistance(x1,y1,x1,y2)+getDistance(x1,y1,x2,y1)))*1000.0)/1000.0;
+		return Math.round((super.getBaseArea()+slantHeight*((getDistance(x1,y1,x1,y2)+getDistance(x1,y1,x2,y1))))*1000.0)/1000.0;
 		
 	}
 	@Override
 	public double getVolume() {
-		return Math.round((normalHeight*super.getBaseArea())/3.0*1000.0)/1000.0;
+		return Math.round(((normalHeight*super.getBaseArea())/3.0)*100.0)/100.0;
 		
 	}
 	@Override
@@ -32,7 +35,4 @@ public class SquarePyramid extends SquarePrism{
 	"\n\tSurface Height: "+getArea()+"\n\tVolume: "+getVolume()+"\n";
 		
 	}
-	
-
-
 }
